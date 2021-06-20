@@ -1,0 +1,112 @@
+
+<div class="content" style="margin-top: 50px;">
+    <div class="row error_404 hide">
+        <div class="error-container">
+            <i class="pe-7s-way text-success big-icon"></i>
+            <h1>404</h1>
+            <strong>Page Not Found</strong>
+            <p>
+                Sorry, but the page you are looking for has note been found. Try checking the URL for error, then hit the refresh button on your browser or try found something else in our app.
+        
+            </p>
+            
+    </div>
+</div>
+<div class="row ath_detail hide">
+    <div class="col-lg-4">
+        <div class="hpanel hgreen">
+            <div class="panel-body">
+                <div class="pull-right text-right">
+                    <div class="btn-group">
+                        <i class="fa fa-facebook btn btn-default btn-xs"></i>
+                        <i class="fa fa-twitter btn btn-default btn-xs"></i>
+                        <i class="fa fa-linkedin btn btn-default btn-xs"></i>
+                    </div>
+                </div>
+                <img alt="logo" class="img-circle m-b m-t-md" width="120" src="<%=appConfig.baseUrl%>athletes/<%=obj.athlete_id%>">
+                <h3><%=obj.name%> <%=obj.surname%></h3>
+                <div class="text-muted  m-b-xs"><%=obj.year%></div>
+            </div>
+            <div class="panel-footer contact-footer">
+                <div class="row">
+                    <div class="col-md-4 border-right">
+                        <div class="contact-stat"><span>Gold</span> <button type="button" style="background-color: #ffce00;color: black;" class="btn  btn-circle"><%=obj.gold%></button></div>
+                    </div>
+                    <div class="col-md-4 border-right">
+                        <div class="contact-stat"><span>Silver</span> <button type="button" style="background-color: #d8d8d8;color: black;" class="btn  btn-circle"><%=obj.silver%></button></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-stat"><span>Brown</span> <button type="button" style="background-color: #cc8251;color: black;" class="btn  btn-circle"><%=obj.bronze%></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <div class="hpanel">
+            <div class="hpanel">
+<div class="panel-body">
+                <div class="table-responsive">
+                <table cellpadding="1" cellspacing="1" class="table table-condensed table-striped">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>City</td>
+                            <td><%=obj.city%></td>
+                        </tr>
+                        <tr>
+                            <td>Year</td>
+                            <td><%=obj.year%></td>
+                        </tr>
+                        <tr>
+                            <td>Year of Birth</td>
+                            <td><%=obj.date_of_birth%></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td><%=obj.height%></td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td><%=obj.weight%></td>
+                        </tr>
+                    </tbody>
+                </table>
+</div>
+
+            </div>
+            </div>
+        </div>
+
+        <div class="hpanel">
+            <div class="hpanel">
+<div class="panel-body">
+                <div class="table-responsive">
+                    <h3>History</h3>
+                <table cellpadding="1" cellspacing="1" class="table table-condensed table-striped">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody id="games_history">
+                    <tr>
+                        <td>2012</td>
+                        <td>G <button class="btn btn-circle" style="background-color: #ffce00;color: black;" type="button">23</button> S  <button style="background-color: #d8d8d8;color: black;" class="btn btn-circle" type="button" >23</button> B <button style="background-color: #cc8251;color: black;" class="btn btn-circle" type="button">23</button></td>
+                    </tr>
+                    </tbody>
+                </table>
+</div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div></div>

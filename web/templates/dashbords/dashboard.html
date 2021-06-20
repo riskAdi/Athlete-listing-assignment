@@ -1,0 +1,26 @@
+<div class="hpanel panel-body">
+  <div class="panel-body">
+      <h2 class="font-light m-b-xs">
+          <%=element.year%>
+      </h2>
+  </div>
+</div>
+  <div class="owl-carousel owl-theme panel-body">
+     <% 
+    _.each(element.results, function(obj){ 
+      if(obj.athlete_id){
+      %> 
+
+      <div >
+        <div class="">
+          <div class="panel-body" style="text-align: center;">
+            <img alt="logo" class="img-circle m-b" src="<%=appConfig.baseUrl%>athletes/<%=obj.athlete_id%>">
+             <a href="javascript:void(0)" class="nav_detail" data="<%=obj.athlete_id%>" year="<%=element.year%>" ><h6 style="text-align: center;"><%=obj.name%> <%=obj.surname%></h6></a>
+             <div class="text-muted  m-b-xs"><%=obj.city%></div>
+        </div>
+      </div>
+  </div>
+      <% }else{ %> 
+        <div class="text-muted  m-b-xs" style="text-align: center;">Empty.</div>
+       <% }  }); %>
+  </div>

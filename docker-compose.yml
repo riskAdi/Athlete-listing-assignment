@@ -1,0 +1,28 @@
+
+version: "3"
+services:
+  node:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - 8800:8800
+    volumes:
+      - ./backend:/usr/src/app
+      - /usr/src/app/node_modules
+    networks:
+      - assignment
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - 8023:80
+    volumes:
+      - ./web:/usr/share/nginx/html
+    networks:
+      - assignment  
+networks:
+  assignment:
+    driver: bridge
+
