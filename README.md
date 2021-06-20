@@ -4,7 +4,7 @@
  Run command: docker-compose up -d
  You can then access the web from http://localhost:8023/ 
  
- # To run react-natie app
+ # To run react-native app
  Run command: npm run ios
  
 # Recording video
